@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --main-1_color: rgb(187, 65, 65);
+  --main-2_color: rgb(69, 69, 158);
+  --btn-sign-in_color: rgb(72, 72, 211);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100%;
+}
+
+.main-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--main-1_color);
+  height: 700px;
+  width: 500px;
+  border-radius: 15px 0 0 15px;
+}
+
+.main-1 .planet {
+  width: 100%;
+  text-align: center;
+}
+
+.main-1 .planet .img {
+  width: 80px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(86%) saturate(2%)
+    hue-rotate(206deg) brightness(107%) contrast(101%);
+}
+
+.main-1 .text {
+  font-size: var(--text-fs);
+  text-align: center;
+  margin-top: 80px;
+}
+
+.main-1 .rocket .img-rocket {
+  width: 300px;
+  text-align: center;
+  margin-left: 100px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(86%) saturate(2%)
+    hue-rotate(206deg) brightness(107%) contrast(101%);
+}
+
+.main-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: var(--main-2_color);
+  height: 700px;
+  width: 500px;
+  justify-content: space-around;
+  position: relative;
+  border-radius: 0 15px 15px 0;
+}
+
+.main-2 .login-page {
+  margin: 50px 15px 0 15px;
+}
+
+.main-2 .btn-group {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.main-2 .btn-group .btn-sign-in,
+.main-2 .btn-group .btn-sign-up {
+  background-color: var(--btn-sign-in_color);
+  color: #fff;
+  border: none;
+  padding: 5px 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.main-2 .btn-group .btn-sign-up {
+  background-color: var(--main-1_color);
+  border-radius: 0 10px 10px 0;
+}
+
+.main-2 .btn-group .btn-sign-in {
+  border-radius: 10px 0 0 10px;
+}
+
+.main-2.login-page .form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.login-page .form-group {
+  font-size: 12px;
+}
+
+.main-2 .login-page .checkbox a.termms {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.main-2 .form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.form-group input {
+  width: 100%;
+  font-size: 12px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  padding-bottom: 10px;
+}
+
+.form-group label {
+  margin-top: 10px;
+}
+
+.login-page .checkbox {
+  margin-top: 20px;
+}
+
+.login-page input[type="checkbox"]::before {
+  background-color: var(--main-1_color) !important;
+}
+
+.login-page .checkbox label {
+  letter-spacing: 0.05em;
+  font-size: 12px;
+}
+
+.login-page .checkbox a.terms {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: var(--main-1_color);
+  font-weight: 600;
+}
+
+.login-page button.btn-submit {
+  background-color: var(--main-1_color);
+  color: #fff;
+  border-radius: 20px;
+  position: relative;
+  padding: 5px 20px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 40px;
+  cursor: pointer;
+}
