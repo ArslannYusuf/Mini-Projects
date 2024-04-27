@@ -6,7 +6,7 @@
   color: #353535;
   font-weight: 550;
   font-size: 30px;
-  line-height: 45px;
+  line-height: 35px;
 }
 
 h4 {
@@ -38,8 +38,8 @@ span.icon {
   border-bottom: 1px solid;
   border-radius: 0;
   box-shadow: none;
-  height: 45px;
-  margin: 10px 0;
+  height: 8px;
+  
 }
 
 .form-ctrl {
